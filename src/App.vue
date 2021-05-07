@@ -1,23 +1,31 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <!-- <HelloWorld msg="Welcome to My Vue.js App"/> -->
     <!-- <Home data = 'Hello here is what you need' msg = 'I am Captain America'/> -->
-    <Rendering/>
+    <!-- <Rendering/> -->
+    <!-- <Loops/> -->
+    <!-- <Compose/> -->
+    <Template/>
   </div>
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
 // import Home from './components/Home.vue'
-import Rendering from './components/Rendering'
-
+// import Rendering from './components/Rendering'
+// import Loops from './components/Loops.vue'
+// import Compose from './components/Compose.vue'
+import Template from './components/Template.vue'
 export default {
   name: 'App',
   components: {
     // HelloWorld,
     // Home,
-    Rendering
+    // Rendering,
+    // Loops,
+    // Compose
+    Template
 
   }
 }
