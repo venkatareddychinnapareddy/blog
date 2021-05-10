@@ -14,7 +14,10 @@
     <Child v-on:changeTitle="updateTitleText($event)"/> -->
 
     <!-- <Props v-bind:users=users /> When we want send data in props use v-bind -->
-    <LifeCycle/>
+    <!-- <LifeCycle/> -->
+    <!-- <Login/> -->
+    <!-- <SignUp/> -->
+    <Validation/>
   </div>
 </template>
 
@@ -29,7 +32,11 @@
   // import DataBinding from './components/DataBinding.vue'
   // import Child from './components/Child.vue'
   // import Props from './components/Props.vue'
-  import LifeCycle from './components/LifeCycle.vue'
+  // import LifeCycle from './components/LifeCycle.vue'
+  // import Login from './components/Login.vue'
+  // import SignUp from './components/SignUp.vue'
+  import Validation from './components/Validation.vue'
+
 export default {
   name: 'App',
   components: {
@@ -43,7 +50,10 @@ export default {
     // DataBinding
     // Child
     // Props
-    LifeCycle
+    // LifeCycle
+    // Login
+    // SignUp
+    Validation
   },
   // data()   // when to pass big data we use data method
   // {
