@@ -44,7 +44,7 @@ export default {
                 this.error.push('password is required');
             }
             alert(this.error);
-            e.preventDefault();
+            e.preventDefault(); // it dosent llow to refresh the page so the data entered remains same in input boxes
         }
     }
 }

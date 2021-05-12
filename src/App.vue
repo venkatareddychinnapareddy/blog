@@ -17,7 +17,20 @@
     <!-- <LifeCycle/> -->
     <!-- <Login/> -->
     <!-- <SignUp/> -->
-    <Validation/>
+    <!-- <Validation/> -->
+
+    <!-- <h1>Filter concept in Vue js</h1>
+    <h1>{{name | Ucase }}</h1>
+    <FilterConcept/> -->
+
+    <!-- <BeforeCreated/> -->
+    <!-- <BeforeMounted/> -->
+
+    <div v-if="display">
+      <BeforeDestroyed/>
+    </div>
+     <button v-on:click="toggle">Toggle</button>
+
   </div>
 </template>
 
@@ -35,7 +48,11 @@
   // import LifeCycle from './components/LifeCycle.vue'
   // import Login from './components/Login.vue'
   // import SignUp from './components/SignUp.vue'
-  import Validation from './components/Validation.vue'
+  // import Validation from './components/Validation.vue'
+  // import FilterConcept from './components/FilterConcept.vue'
+  // import BeforeCreated from './components/BeforeCreated.vue'
+  // import BeforeMounted from './components/BeforeMounted.vue'
+  import BeforeDestroyed from './components/BeforeDestroyed.vue'
 
 export default {
   name: 'App',
@@ -44,18 +61,39 @@ export default {
     // Home,
     // Rendering,
     // Loops,
-    // Compose
-    // Template
-    // Bindings
-    // DataBinding
-    // Child
-    // Props
-    // LifeCycle
-    // Login
-    // SignUp
-    Validation
+    // Compose,
+    // Template,
+    // Bindings,
+    // DataBinding,
+    // Child,
+    // Props,
+    // LifeCycle,
+    // Login,
+    // SignUp,
+    // Validation,
+    // FilterConcept
+    // BeforeCreated
+    // BeforeMounted
+    BeforeDestroyed
   },
-  // data()   // when to pass big data we use data method
+  data(){
+    return{
+      display : true
+    }
+  },
+  methods : {
+    toggle(){
+      this.display = !this.display;
+    }
+  }
+
+  // data(){
+  //   return {
+  //     name : 'Venkata reddy'
+  //   }
+  // -------------------------------break--------------------------}
+
+  // data()   // when to pass big data we use data method  @this is props data
   // {
   //   return {
   //     users : [
@@ -77,8 +115,7 @@ export default {
   //       }
   //     ]
   //   }
-  // }
-
+  // --------------------------------break---------------------------}
   // data(){
   //   return {
   //     title : 'Child to Parent Data'
