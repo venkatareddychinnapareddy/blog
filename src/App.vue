@@ -26,11 +26,13 @@
     <!-- <BeforeCreated/> -->
     <!-- <BeforeMounted/> -->
 
-    <div v-if="display">
+    <!-- <div v-if="display">
       <BeforeDestroyed/>
     </div>
-     <button v-on:click="toggle">Toggle</button>
+     <button v-on:click="toggle">Toggle</button> -->
 
+    <!-- <EmployeeList/> -->
+    <BootstrapVue/>
   </div>
 </template>
 
@@ -52,7 +54,9 @@
   // import FilterConcept from './components/FilterConcept.vue'
   // import BeforeCreated from './components/BeforeCreated.vue'
   // import BeforeMounted from './components/BeforeMounted.vue'
-  import BeforeDestroyed from './components/BeforeDestroyed.vue'
+  // import BeforeDestroyed from './components/BeforeDestroyed.vue'
+  // import EmployeeList from './components/EmployeeList.vue'
+  import BootstrapVue from './components/BootstrapVue.vue'
 
 export default {
   name: 'App',
@@ -74,18 +78,21 @@ export default {
     // FilterConcept
     // BeforeCreated
     // BeforeMounted
-    BeforeDestroyed
+    // BeforeDestroyed
+    // EmployeeList
+    BootstrapVue
   },
-  data(){
-    return{
-      display : true
-    }
-  },
-  methods : {
-    toggle(){
-      this.display = !this.display;
-    }
-  }
+ 
+  // data(){  destroyed concept data
+  //   return{
+  //     display : true
+  //   }
+  // },
+  // methods : {
+  //   toggle(){
+  //     this.display   = !this.display;
+  //   }
+  // }
 
   // data(){
   //   return {
