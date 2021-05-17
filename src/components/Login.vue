@@ -20,7 +20,7 @@ export default {
     },
     methods : {
         getLogin () {
-            console.log('your logged in anfd your data is', this.loginForm);
+            console.log('your logged in and your data is', this.loginForm);
         }
     }
 }

@@ -13,7 +13,7 @@
     <!-- <h1>{{title}}</h1>
     <Child v-on:changeTitle="updateTitleText($event)"/> -->
 
-    <!-- <Props v-bind:users=users /> When we want send data in props use v-bind -->
+    <!-- <Props v-bind:users=users />  -->
     <!-- <LifeCycle/> -->
     <!-- <Login/> -->
     <!-- <SignUp/> -->
@@ -31,8 +31,31 @@
     </div>
      <button v-on:click="toggle">Toggle</button> -->
 
-    <!-- <EmployeeList/> -->
-    <BootstrapVue/>
+    <!-- <GetAPI/> -->
+    <!-- <BootstrapVue/> -->
+    <!-- <PostAPI/> -->
+
+    <!-- <nav>
+      <ul>
+        <li>
+          <router-link to="/">Home</router-link>
+        </li>
+        <li>
+          <router-link to="/about">About</router-link>
+        </li>
+      </ul>
+    </nav>
+    <router-view></router-view> -->
+
+   <!-------- Dynamic componets ---> 
+
+    <!-- <SignUp/>
+    <SignIn/> -->
+
+    <component v-bind:is="cmp"></component>
+    <button v-on:click="uploadCmp('signin')">Load signIn</button>
+    <button v-on:click="uploadCmp('signup')">Load signUp</button>
+
   </div>
 </template>
 
@@ -55,9 +78,11 @@
   // import BeforeCreated from './components/BeforeCreated.vue'
   // import BeforeMounted from './components/BeforeMounted.vue'
   // import BeforeDestroyed from './components/BeforeDestroyed.vue'
-  // import EmployeeList from './components/EmployeeList.vue'
-  import BootstrapVue from './components/BootstrapVue.vue'
-
+  // import GetAPI from './components/GetAPI.vue'
+  // import BootstrapVue from './components/BootstrapVue.vue'
+  // import PostAPI from './components/PostAPI.vue'
+  import SignIn from './components/Dynamic/SignIn.vue'
+  import SignUp from './components/Dynamic/SignUp.vue'
 export default {
   name: 'App',
   components: {
@@ -70,7 +95,7 @@ export default {
     // Bindings,
     // DataBinding,
     // Child,
-    // Props,
+    //  Props,
     // LifeCycle,
     // Login,
     // SignUp,
@@ -79,9 +104,23 @@ export default {
     // BeforeCreated
     // BeforeMounted
     // BeforeDestroyed
-    // EmployeeList
-    BootstrapVue
+    // GetAPI
+    // BootstrapVue
+    // PostAPI
+    'signin' : SignIn,
+    'signup' : SignUp
   },
+  data(){
+    return {
+      cmp : 'signin'
+    }
+  },
+  methods: {
+    uploadCmp(item)
+    {
+      this.cmp = item
+    }
+  }
  
   // data(){  destroyed concept data
   //   return{
@@ -100,28 +139,32 @@ export default {
   //   }
   // -------------------------------break--------------------------}
 
-  // data()   // when to pass big data we use data method  @this is props data
-  // {
-  //   return {
+  //  data()   // when to pass big data we use data method  @this is props data
+  //  {
+  //    return {
   //     users : [
-  //       {
-  //         name : 'venkat',
-  //         age : 22,
-  //         Degree : 'Bachelors',
-  //         email : 'venkat@gmail.com',
+  //        {
+  //          name : 'venkat',
+  //          age : 22,
+  //          Degree : 'Bachelors',
+  //          email : 'venkat@gmail.com',
   //         city : 'Guntur',
-  //         stream : 'Mechanical'
-  //       },
-  //       {
-  //         name : 'Reddy',
-  //         age : 30,
-  //         Degree : 'masters',
+  //          stream : 'Mechanical',
+  //          designation : 'HR'
+  //        },
+  //        {
+  //          name : 'Reddy',
+  //          age : 30,
+  //          Degree : 'masters',
   //         email : 'Reddy@gmail.com',
-  //         city : 'redwt',
-  //         stream : 'AI',
-  //       }
-  //     ]
-  //   }
+  //          city : 'redwt',
+  //          stream : 'AI',
+  //          designation : 'TR'
+  //        }
+  //      ]
+  //    }
+  //  }
+
   // --------------------------------break---------------------------}
   // data(){
   //   return {

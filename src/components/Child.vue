@@ -2,7 +2,7 @@
     <div>
         <h1>This is a Child Component</h1>
         <button v-on:click="updateTitle">Update Title</button>
-    </div>
+    </div>  <!--Here parent component is App.vue -->
 </template>
 
 <script>
