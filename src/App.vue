@@ -52,9 +52,11 @@
     <!-- <SignUp/>
     <SignIn/> -->
 
-    <component v-bind:is="cmp"></component>
+    <!-- <component v-bind:is="cmp"></component>
     <button v-on:click="uploadCmp('signin')">Load signIn</button>
-    <button v-on:click="uploadCmp('signup')">Load signUp</button>
+    <button v-on:click="uploadCmp('signup')">Load signUp</button> -->
+
+    <CustomDirectives/>
 
   </div>
 </template>
@@ -81,8 +83,9 @@
   // import GetAPI from './components/GetAPI.vue'
   // import BootstrapVue from './components/BootstrapVue.vue'
   // import PostAPI from './components/PostAPI.vue'
-  import SignIn from './components/Dynamic/SignIn.vue'
-  import SignUp from './components/Dynamic/SignUp.vue'
+  // import SignIn from './components/Dynamic/SignIn.vue'
+  // import SignUp from './components/Dynamic/SignUp.vue'
+  import CustomDirectives from './components/Custom Directives/CustomDirectives.vue'
 export default {
   name: 'App',
   components: {
@@ -107,20 +110,25 @@ export default {
     // GetAPI
     // BootstrapVue
     // PostAPI
-    'signin' : SignIn,
-    'signup' : SignUp
+
+    // 'signin' : SignIn,
+    // 'signup' : SignUp
+
+    CustomDirectives
+
   },
-  data(){
-    return {
-      cmp : 'signin'
-    }
-  },
-  methods: {
-    uploadCmp(item)
-    {
-      this.cmp = item
-    }
-  }
+
+  // data(){   data for dynamic signin and signup
+  //   return {
+  //     cmp : 'signin'
+  //   }
+  // },
+  // methods: {
+  //   uploadCmp(item)
+  //   {
+  //     this.cmp = item
+  //   }
+  // }
  
   // data(){  destroyed concept data
   //   return{
