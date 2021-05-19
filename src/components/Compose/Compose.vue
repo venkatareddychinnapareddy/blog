@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import Users from './Users.vue';
-import Products from './Products.vue'
+import Users from '../Compose/Users.vue';
+import Products from '../Compose/Products.vue'
 export default {
     name : 'Compose',
     components : {
