@@ -60,6 +60,8 @@
 
     <!-- <Home/> -->
 
+    <Home/>
+
   </div>
 </template>
 
@@ -112,10 +114,9 @@
 
   // import CustomDirectives from './components/Custom Directives/CustomDirectives.vue'
 
-    // import Home from './components/ChildToParent/Home.vue'
+  // import Home from './components/ChildToParent/Home.vue'
 
-    
-    
+  import Home from './components/Non-props Data/Home.vue'  
 export default {
   name: 'App',
   components: {
@@ -147,6 +148,8 @@ export default {
     // CustomDirectives
 
     // Home
+
+    Home
 
   },
 
