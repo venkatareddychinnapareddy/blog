@@ -60,7 +60,9 @@
 
     <!-- <Home/> -->
 
-    <Home/>
+    <!-- <Home/> -->
+
+    <ComputedProperty/>
 
   </div>
 </template>
@@ -116,7 +118,9 @@
 
   // import Home from './components/ChildToParent/Home.vue'
 
-  import Home from './components/Non-props Data/Home.vue'  
+  // import Home from './components/Non-props Data/Home.vue'  
+
+  import ComputedProperty from './components/Computed Property/ComputedProperty.vue'
 export default {
   name: 'App',
   components: {
@@ -149,7 +153,9 @@ export default {
 
     // Home
 
-    Home
+    // Home
+
+    ComputedProperty
 
   },
 
