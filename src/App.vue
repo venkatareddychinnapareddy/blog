@@ -56,36 +56,66 @@
     <button v-on:click="uploadCmp('signin')">Load signIn</button>
     <button v-on:click="uploadCmp('signup')">Load signUp</button> -->
 
-    <CustomDirectives/>
+    <!-- <CustomDirectives/> -->
+
+    <!-- <Home/> -->
 
   </div>
 </template>
 
 <script>
   // import HelloWorld from './components/HelloWorld.vue'
+
   // import Home from './components/Home.vue'
+
   // import Rendering from './components/Rendering'
+
   // import Loops from './components/Loops.vue'
+
   // import Compose from './components/Compose.vue'
+
   // import Template from './components/Template.vue'
+
   // import Bindings from './components/Bindings.vue'
+
   // import DataBinding from './components/DataBinding.vue'
+
   // import Child from './components/Child.vue'
+
   // import Props from './components/Props.vue'
+
   // import LifeCycle from './components/LifeCycle.vue'
+
   // import Login from './components/Login.vue'
+
   // import SignUp from './components/SignUp.vue'
+
   // import Validation from './components/Validation.vue'
+
   // import FilterConcept from './components/FilterConcept.vue'
+
   // import BeforeCreated from './components/BeforeCreated.vue'
+
   // import BeforeMounted from './components/BeforeMounted.vue'
+
   // import BeforeDestroyed from './components/BeforeDestroyed.vue'
+
   // import GetAPI from './components/GetAPI.vue'
+
   // import BootstrapVue from './components/BootstrapVue.vue'
+
   // import PostAPI from './components/PostAPI.vue'
+
   // import SignIn from './components/Dynamic/SignIn.vue'
+
   // import SignUp from './components/Dynamic/SignUp.vue'
-  import CustomDirectives from './components/Custom Directives/CustomDirectives.vue'
+
+  // import CustomDirectives from './components/Custom Directives/CustomDirectives.vue'
+
+    // import Home from './components/ChildToParent/Home.vue'
+
+    
+    
 export default {
   name: 'App',
   components: {
@@ -114,7 +144,9 @@ export default {
     // 'signin' : SignIn,
     // 'signup' : SignUp
 
-    CustomDirectives
+    // CustomDirectives
+
+    // Home
 
   },
 
