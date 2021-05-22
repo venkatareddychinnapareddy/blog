@@ -62,7 +62,9 @@
 
     <!-- <Home/> -->
 
-    <ComputedProperty/>
+    <!-- <ComputedProperty/> -->
+
+    <Watcher/>
 
   </div>
 </template>
@@ -120,7 +122,9 @@
 
   // import Home from './components/Non-props Data/Home.vue'  
 
-  import ComputedProperty from './components/Computed Property/ComputedProperty.vue'
+  // import ComputedProperty from './components/Computed Property/ComputedProperty.vue'
+
+  import Watcher from './components/Watchers/Watcher.vue'
 export default {
   name: 'App',
   components: {
@@ -155,7 +159,9 @@ export default {
 
     // Home
 
-    ComputedProperty
+    // ComputedProperty
+
+    Watcher
 
   },
 
