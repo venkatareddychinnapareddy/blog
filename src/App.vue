@@ -64,8 +64,9 @@
 
     <!-- <ComputedProperty/> -->
 
-    <Watcher/>
+    <!-- <Watcher/> -->
 
+   <Home />
   </div>
 </template>
 
@@ -124,7 +125,14 @@
 
   // import ComputedProperty from './components/Computed Property/ComputedProperty.vue'
 
-  import Watcher from './components/Watchers/Watcher.vue'
+  // import Watcher from './components/Watchers/Watcher.vue'
+
+  // import Home from './components/Slots/Home.vue'
+
+  // import Home from './components/Multiple & Named Slots/Home.vue'
+
+  import Home from './components/Dynamic Components/Home.vue'
+
 export default {
   name: 'App',
   components: {
@@ -161,7 +169,9 @@ export default {
 
     // ComputedProperty
 
-    Watcher
+    // Watcher
+
+    Home
 
   },
 
